@@ -1,0 +1,5 @@
+{
+    "api_key": "",
+    "production_url": "https://prod.api.pvp.net/api/lol/",
+    "api_version": "v1.4"
+}
