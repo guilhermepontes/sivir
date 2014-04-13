@@ -28,6 +28,3 @@ class SivirRequest:
 
 		r = requests.get(url, params = api)
 		return r.text
-
-
-print SivirRequest("br", "/summoner/by-name/nulled").request()
