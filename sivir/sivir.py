@@ -1,20 +1,21 @@
-import requests
-import sivir_request
+from sivir_summoner import SivirSummoner
 
-
-
-class Sivir(SivirRequest):
-	def __init__(self, key="123"):
-		if key == "":
-			raise Exception("You have to enter the API Key or Hecarim is going to be with you at night.")
-		else:
-			self.key = key
-
+class Sivir(SivirSummoner):
+	def __init__(self):
+		SivirSummoner.__init__(self)
+	
+	@classmethod
 	def from_region(self, region):
-		print region
-
+		self.region = region
+		return self
+	
+	@classmethod
 	def by_user(self, user):
-		print Sirvir
-
-
-s = SivirRequest("key", "params")
+		self.user = user
+		return self
+	
+	@classmethod
+	def by_user_id(self, user_id):
+		self.user_id = user_id
+	
+print Sivir.from_region("br").by_user("nulled").get_data()
