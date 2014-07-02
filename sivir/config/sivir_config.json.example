@@ -1,3 +1,4 @@
+/* please use: cp sivir_config.json.example sivir_config.json */
 {
     "api_key": "",
     "production_url": "https://prod.api.pvp.net/api/lol/",
