@@ -18,4 +18,6 @@ class Sivir(SivirSummoner):
   def by_user_id(self, user_id):
     self.user_id = user_id
 
-print Sivir.from_region("br").by_user("nulled").get_data()
+
+user = Sivir.from_region("br").by_user("nulled")
+print user.get_data()
