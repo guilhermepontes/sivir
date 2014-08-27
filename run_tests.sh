@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python sivir/test/test_summoners.py
+for f in tests/*.py; do python "$f"; done
